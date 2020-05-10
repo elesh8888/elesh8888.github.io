@@ -13,11 +13,20 @@
     padding: 0;
     background-color: #e8e4eed3;
 }
+  .main {
+    text-align: center;
+}
+  .wenzi {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0a78f5;
+    font-size: 16px;
+  }
 </style>
 <body>
-  <div id="ask" algin="center">
+<div id="ask" class="main">
 <img src="1.jpg" width="100%" height="280px"><br>
-<p>菩提树下，三五只蚂蚁在黄叶上搬食！</p>
+<p class="wenzi">菩提本无树，明镜亦非台。佛性常清净，何处有尘埃！身是菩提树，心如明镜台。明镜本清净，何处染尘埃！菩提本无树，明镜亦非台。本来无一物，何处惹尘埃！菩提只向心觅，何劳向外求玄？
+听说依此修行，西方只在目前！</p>
     
  <br />    
  <br />   
@@ -28,9 +37,7 @@
 
   </div>
 </body>
-  
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
-
   <script src="https://unpkg.com/element-ui/lib/index.js"></script>
   <script>
     new Vue({
@@ -40,17 +47,5 @@
       }
     })
   </script>
-  <script>
-  export default {
-    methods: {
-        open2() {
-        this.$notify({
-          title: '联系方式：',
-          message: 'QQ：278602157,Mail：278602157@qq.com',
-          duration: 0
-        });
-      }
-    }
-  }
-</script>
+ 
 </html>
