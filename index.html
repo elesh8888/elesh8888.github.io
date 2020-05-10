@@ -5,15 +5,36 @@
 <head>
     <meta charset="UTF-8">
     <title>开发博客</title>
+   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
 
 <body>
+  <div id="ask">
 <img src="1.jpg"><br>
 <p>菩提树下，三五只蚂蚁在黄叶上搬食！</p>
 <h4>联系方式：</h4>
 <p>QQ：278602157</p>
 <p>Mail：278602157@qq.com</p>
 <p>MSN：278602157@qq.com</p>
-  
+  <el-row>
+  <el-button icon="el-icon-search" circle></el-button>
+ 
+  <el-button type="info" icon="el-icon-message" circle></el-button>
+ 
+  <el-button type="danger" icon="el-icon-delete" circle></el-button>
+</el-row>
+  </div>
 </body>
+  
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#ask',
+      data: function() {
+        return { visible: false }
+      }
+    })
+  </script>
 </html>
