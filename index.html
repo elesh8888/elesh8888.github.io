@@ -9,11 +9,15 @@
 </head>
 
 <body>
-  <div id="ask">
+  <div id="ask" algin="center">
 <img src="1.jpg"><br>
 <p>菩提树下，三五只蚂蚁在黄叶上搬食！</p>
- 
- <el-button plain  @click="open2"><i class="el-icon-phone"></i> &联系我 </el-button>
+    
+ <el-tooltip placement="top">
+  <div slot="content">联系方式：<br/>QQ：278602157,Mail：278602157@qq.com</div>
+  <el-button> <el-button type="success"><i class="el-icon-phone"></i> 联系我 </el-button></el-button>
+</el-tooltip>
+
   </div>
 </body>
   
