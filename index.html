@@ -26,37 +26,56 @@
     text-indent: 2em;
     font-size: 16px;
   }
+  .block {
+    width: 90%;
+  }
+  .ecc {
+    width: 90%;
+    margin-left: 50px;
+  }
 </style>
 <body>
 <div id="ask" class="main">
 <img src="1.jpg" width="100%" height="280px"><br>
 <h3>菩提偈</h3>
 <el-divider></el-divider>
-<p class="wenzi">菩提本无树，明镜亦非台。佛性常清净，何处有尘埃！身是菩提树，心如明镜台。明镜本清净，何处染尘埃！菩提本无树，明镜亦非台。本来无一物，何处惹尘埃！菩提只向心觅，何劳向外求玄？
-听说依此修行，西方只在目前！</p>
+<el-card class="ecc">
+  <h4>菩提本无树，明镜亦非台。佛性常清净，何处有尘埃！身是菩提树，心如明镜台。明镜本清净，何处染尘埃！菩提本无树，明镜亦非台。本来无一物，何处惹尘埃！菩提只向心觅，何劳向外求玄？
+    听说依此修行，西方只在目前！</h4>
+  </el-card>
+
 <br />    
 <br />  
 <br />    
 <br />  
 <h3>项目承接</h3>
 <el-divider></el-divider>
-<div class="xianmu">
-<ol>
-  <li>作品案例...</li>
-  <li>社区、直播、微购精彩专题...</li>
-  <li>工程师大伽风采...</li>
-  <li>合作步骤了解...</li>
-  <li>合作流程一览...</li>
-</ol>
+<div class="block">
+  <el-timeline>
+    <el-timeline-item timestamp="2020/5/10" placement="top">
+      <el-card>
+        <ol>
+          <li>作品案例...</li>
+          <li>社区、直播、微购精彩专题...</li>
+          <li>工程师大伽风采...</li>
+          <li>合作步骤了解...</li>
+          <li>合作流程一览...</li>
+        </ol>
+       
+      </el-card>
+    </el-timeline-item>
+   
+  </el-timeline>
 </div>
-    
  <br />    
  <br />  
  <div class="lianxi">
  <el-tooltip placement="bottom" >
   <div slot="content">联系方式：<br/>QQ：278602157,Mail：278602157@qq.com</div>
   <el-button type="success"><i class="el-icon-phone"></i> 联系我们 </el-button>
-</el-tooltip>
+</el-tooltip><el-button type="primary" icon="el-icon-share">
+ 
+</el-button>
 </div> 
   </div>
 </body>
@@ -72,4 +91,3 @@
   </script>
  
 </html>
-
